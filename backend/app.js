@@ -4,6 +4,8 @@ const app = express();
 const db = require('./config/db');
 const articleRoutes = require('./routes/articles');
 
+require('dotenv').config({ path: '../.env' });
+
 // Middleware
 app.use(bodyParser.json());
 
